@@ -202,3 +202,43 @@ h2 {
 #central1{
 margin-top: 10px;
 }
+#eventos{
+  display: flex;
+  justify-content: right;
+}
+#eventoTitulo{
+  display: flex;
+  justify-content: right;
+  text-align: left;
+}
+#tituloCalendario{
+  display: flex;
+  justify-content: left;
+}
+
+#tituloCalendario {
+  color: #ffdba8;
+}
+
+#semana th {
+  background-color: #ffdba8;
+  color: #330c05;
+  border: 2px solid#330c05;; /* cor da borda */
+}
+
+#dias td {
+  background-color: #330c05;
+  color: #ffdba8;
+  border: 2px solid #ffdba8; /* cor da borda */
+  cursor: pointer;
+}
+
+#dias td:hover {
+  background-color: #ffdba8;
+  color: #330c05;
+}
+
+.selected {
+  background-color:white !important;
+  color: #330c05 !important;
+}

@@ -81,3 +81,36 @@ function destacarDia(dia) {
   const celula = document.querySelector(`td a[href="#"][onclick="destacarDia(${dia})"]`);
   celula.classList.toggle("text-danger"); // Alterne a cor (por exemplo, vermelho)
 }
+
+//calendario
+
+const events = {
+  10: ["Inauguração do Café Matutino às 7h"],
+  19: ["Encontro no Filter Coffee às 10h"]
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+  const days = document.querySelectorAll("#dias td");
+  days.forEach(day => {
+      day.addEventListener("click", function() {
+          days.forEach(d => d.classList.remove("selected"));
+          day.classList.add("selected");
+
+          const dayNumber = parseInt(day.innerText);
+          const eventList = document.getElementById("eventList");
+          eventList.innerHTML = "";
+
+          if (events[dayNumber]) {
+              events[dayNumber].forEach(event => {
+                  const li = document.createElement("li");
+                  li.innerText = event;
+                  eventList.appendChild(li);
+              });
+          } else {
+              const li = document.createElement("li");
+              li.innerText = "Nenhum evento.";
+              eventList.appendChild(li);
+          }
+      });
+  });
+});
