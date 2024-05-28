@@ -1,0 +1,169 @@
+// Customizing Bootstrap with Sass variables:
+// https://getbootstrap.com/docs/5.0/customize/sass/
+
+// $primary: #276fc2;
+// $secondary: #e8d21d;
+// $border-radius: 1px;
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+//GERAL
+
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(51, 12, 5, 1)),
+    url('https://t4.ftcdn.net/jpg/06/15/47/39/360_F_615473969_OQH56joXaYscLjIihTYSLvBzwm5VAdTa.jpg');
+  background-size: contain;
+  /* Para ajustar a imagem para cobrir toda a área do corpo */
+  background-position: top;
+  /* Para centralizar a imagem */
+  background-repeat: no-repeat;
+  /* Para evitar a repetição da imagem */
+  background-color: #330c05;
+  color: #ffdba8;
+  margin-top: 0px;
+}
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 200px;
+  transition: font-size 0.5s ease;
+  /* Adiciona uma transição suave de tamanho */
+  text-align: center;
+  font-weight: 200;
+  /* Define um peso de fonte mais leve */
+  letter-spacing: 2px;
+  /* Adiciona espaçamento entre as letras para expandir */
+  font-stretch: condensed;
+  margin-top: 30px;
+}
+.h1-normal {
+  font-size: 50px;
+  /* Tamanho normal */
+}
+.bemVindos {
+  font-family: 'Dancing Script', cursive;
+  font-size: 23px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 200;
+}
+h2 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+}
+.footer {
+  margin-top: 30px;
+}
+
+//INICIO
+.logo {
+  font-family: 'Dancing Script', cursive;
+  text-align: left;
+  font-style: italic;
+  font-weight: 200;
+  padding-left: 20px;
+  margin: 0px;
+}
+.flex-sm-fill {
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-align: center;
+  text-decoration: none;
+  color: #ffdba8;
+  background-color: #330c05;
+  margin: 1%;
+}
+.nav nav-pills {
+  padding: 20px;
+  margin: 20px;
+}
+.nav-link.active {
+  background-color: #330c05;
+}
+.ranking-container {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: rgba(51, 12, 5, 1);
+  border-radius: 8px;
+}
+.ranking-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.ranking-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+.ranking-bar {
+  height: 10px;
+  background-color: #f1c27d;
+  border-radius: 5px;
+}
+//CONTEUDO
+#accordionFlushExample {
+  margin-top: 50px;
+}
+.accordion-button {
+  color: rgba(51, 12, 5, 1);
+  text-align: left;
+  background-color: #f1c27d;
+  margin-top: 15px;
+  padding: 10px 150px 10px 150px;
+}
+
+//LOGIN
+.central {
+  background-color: #330c05;
+  padding: 20px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+}
+.login-container {
+  background-color: #5a2e16;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.login-container h2 {
+  font-family: 'Cursive', sans-serif;
+  color: #f1c27d;
+}
+.form-control {
+  border: none;
+  color: #3e1f13;
+}
+.btn-primary {
+  background-color: #f1c27d;
+  color: #5a2e16;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.link-opacity-25-hover {
+  margin-top: 20px;
+  color: #f1c27d;
+}
+.c-button {
+  text-justify: distribute;
+}
+#esqueci {
+  text-align: left;
+}
+#cadastre {
+  text-align: right;
+}
+.form-control {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#calendario {
+  text-align: center;
+  align-items: center;
+}

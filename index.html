@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="module" src="./src/index.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js'></script>
+
+
+    <title>Coffee Clube</title>
+
+    <!-- fontes -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@900&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@700&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&family=Dancing+Script:wght@700&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- /fontes -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="p-4">
+    <h4 class="logo">Coffee Club</h4>
+
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a
+        class="flex-sm-fill bg-black text-sm-center nav-link active"
+        aria-current="page"
+        href="/"
+        aria-current="page"
+      >
+        Início
+      </a>
+
+      <a class="flex-sm-fill text-sm-center nav-link" href="/conteudo.html">
+        Conteúdo
+      </a>
+
+      <a class="flex-sm-fill text-sm-center nav-link" href="/comunidade.html">
+        Comunidade
+      </a>
+
+      <a class="flex-sm-fill text-sm-center nav-link" href="/login.html">
+        Login
+      </a>
+    </nav>
+    <!-- /BARRA DE NAVEGAÇÃO -->
+
+    <!--APRESENTAÇÃO-->
+    <h1 id="titulo">Coffee Club</h1>
+          <h4 class="bemVindos">Bem vindos</h4>
+    <!--/APRESENTAÇÃO-->
+
+    <!-- HANCKING -->
+    <div class="container ranking-container">
+      <h2 class="text-center">Ranking</h2>
+
+      <div class="ranking-item">
+        <img
+          src="https://marketplace.canva.com/EAExf_kUzrY/1/0/1600w/canva-logo-de-cafeteria-minimalista-k_vK2VzDX1E.jpg"
+          alt="Borcele Cafeteria"
+        />
+        <div class="flex-grow-1">
+          <div class="d-flex justify-content-between">
+            <span>Borcele Cafeteria</span>
+            <span>55%</span>
+          </div>
+          <div class="ranking-bar" style="width: 55%"></div>
+        </div>
+      </div>
+      <div class="ranking-item">
+        <img
+          src="https://www.designi.com.br/images/preview/10510699.jpg"
+          alt="Point do Café"
+        />
+        <div class="flex-grow-1">
+          <div class="d-flex justify-content-between">
+            <span>Point do Café</span>
+            <span>20%</span>
+          </div>
+          <div class="ranking-bar" style="width: 20%"></div>
+        </div>
+      </div>
+
+      <div class="ranking-item">
+        <img
+          src="https://img.freepik.com/vetores-premium/modelo-de-logotipo-de-cafe-vintage_441059-224.jpg"
+          alt="Coffee Premium"
+        />
+        <div class="flex-grow-1">
+          <div class="d-flex justify-content-between">
+            <span>Coffee Premium</span>
+            <span>17%</span>
+          </div>
+          <div class="ranking-bar" style="width: 17%"></div>
+        </div>
+      </div>
+      <div class="ranking-item">
+        <img
+          src="https://static.vecteezy.com/ti/vetor-gratis/t2/334160-logotipo-do-cafe-vetor.jpg"
+          alt="Cofee Place"
+        />
+        <div class="flex-grow-1">
+          <div class="d-flex justify-content-between">
+            <span>Cofee Place</span>
+            <span>5%</span>
+          </div>
+          <div class="ranking-bar" style="width: 5%"></div>
+        </div>
+      </div>
+
+      <div class="ranking-item">
+        <img
+          src="https://static.vecteezy.com/ti/vetor-gratis/p1/183258-logotipo-da-loja-de-cafe-gratis-vetor.jpg"
+          alt="Coffee House"
+        />
+        <div class="flex-grow-1">
+          <div class="d-flex justify-content-between">
+            <span>Coffee House</span>
+            <span>3%</span>
+          </div>
+          <div class="ranking-bar" style="width: 3%"></div>
+        </div>
+      </div>
+    </div>
+    <!-- /HANCKING -->
+
+    <!--CALENDARIO-->
+    <div class="caixa">
+    <div class="col-md-6 mb-3" id="calendario">
+      <label for="Date" class="form-label">Marque um encontro com a galera:</label>
+      <input type="date" class="form-control" id="Date" />
+    </br>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </div>
+    
+    <!--/CALENDARIO-->
+
+    <!-- Rodapé -->
+    <div class="footer">
+    </br>
+      <p>&copy; 2024 Coffee Club. Todos os direitos reservados.</p>
+    </div>
+    <!--/Rodapé -->
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="module" src="./src/index.js"></script>
+
+    <title>Login - Coffee Clube</title>
+
+    <!-- fontes -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@900&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@700&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&family=Dancing+Script:wght@700&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- /fontes -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="p-4">
+    <h4 class="logo">Coffee Club</h4>
+
+    <!--BARRA DE NAVEGAÇÃO-->
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link" href="/index.html">
+        Início
+      </a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="/conteudo.html">
+        Conteúdo
+      </a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="/comunidade.html">
+        Comunidade
+      </a>
+      <a
+        class="flex-sm-fill bg-black text-sm-center nav-link active"
+        aria-current="page"
+        href="/login"
+        aria-current="page"
+      >
+        Login
+      </a>
+    </nav>
+    <!--BARRA DE NAVEGAÇÃO-->
+
+    <!--LOGIN-->
+    <div class="central">
+      <h2>Login</h2>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <div id="emailHelp" class="form-text">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Senha</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1">Lembre-me</label>
+        </div>
+      </br>
+        <button type="submit" class="btn btn-primary">Login</button>
+
+        <div class="c-button">
+        <p>
+        </br>
+          <a id="esqueci" class="link-opacity-25-hover" href="#">Esqueci a senha</a>
+        </p>
+        <p>
+          <a id="cadastre" class="link-opacity-25-hover" href="/cadastro.html">Cadastre-se</a>
+        </p>
+      </div>
+
+      </form>
+    </div>
+
+    <!--/LOGIN-->
+
+    <!-- Rodapé -->
+    <div class="footer">
+    </br>
+      <p>&copy; 2024 Coffee Club. Todos os direitos reservados.</p>
+    </div>
+    <!--/Rodapé -->
+  </body>
+</html>
