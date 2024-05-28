@@ -82,7 +82,7 @@ function destacarDia(dia) {
   celula.classList.toggle("text-danger"); // Alterne a cor (por exemplo, vermelho)
 }
 
-//calendario
+// Calendário
 
 const events = {
   10: ["Inauguração do Café Matutino às 7h"],
@@ -137,3 +137,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   calendar.render();
 });
+
+// COMUNIDADE
+const toastElList = document.querySelectorAll('.toast')
+const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
+
+$(document).ready(function(){
+  $('.toast').toast('show');
+});
+
+const myToastEl = document.getElementById('myToast')
+myToastEl.addEventListener('hidden.bs.toast', () => {
+  // do something...
+})
