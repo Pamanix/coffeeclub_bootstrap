@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="module" src="./src/index.js"></script>
+
+    <title>Cadastro - Coffee Clube</title>
+
+    <!-- fontes -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@900&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@700&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&family=Dancing+Script:wght@700&family=Great+Vibes&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- /fontes -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body class="p-4">
+    <h4 class="logo">Coffee Club</h4>
+
+    <!--BARRA DE NAVEGAÇÃO-->
+    <nav class="nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link" href="/index.html">
+        Início
+      </a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="/conteudo.html">
+        Conteúdo
+      </a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="/comunidade.html">
+        Comunidade
+      </a>
+      <a
+        class="flex-sm-fill bg-black text-sm-center nav-link active"
+        aria-current="page"
+        href="/encontros.html"
+        aria-current="page"
+      >
+        Encontros
+      </a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="/comunidade.html">
+        Login
+      </a>
+    </nav>
+    <!--BARRA DE NAVEGAÇÃO-->
+
+    <!--APRESENTAÇÃO-->
+    <h1 id="titulo">Encontros</h1>
+    <h4 class="bemVindos">Coffee Club</h4>
+    <!--/APRESENTAÇÃO-->
+ <!--MARCAR-->
+<div class="central">
+<h2>Marcar</h2>
+<form>
+  <div class="row">
+    <div class="col-md-12 mb-3">
+      <label for="address" class="form-label">Ponto de encontro </label>
+      <input type="text" class="form-control" id="address" required />
+    </div>
+  </div>
+  
+  <!--CALENDARIO-->
+  <div id="calendario">
+    <div class="col-md-6 mb-3">
+      <label for="Date" class="form-label">Data</label>
+      <input type="date" class="form-control" id="Date" />
+    </br>
+    <!--/CALENDARIO-->
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
+  </div>
+   <!--/MARCAR-->
+</div>
+    <div class="central" id="central1">
+        <!--CALENDARIO-->
+
+        <!--/CALENDARIO-->
+
+        <button type="submit" class="btn btn-primary">Participar</button>
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+    </br>
+      <p>&copy; 2024 Coffee Club. Todos os direitos reservados.</p>
+    </div>
+    <!--/Rodapé -->
+  </body>
+</html>
