@@ -75,29 +75,32 @@
     
     <div class="central">
 
-        <!--MARCAR-->
-        <h2>Marcar</h2>
-        <form>
-            <div class="row">
-                <div class="col-md-12 mb-3">
-                    <label for="address" class="form-label">Ponto de encontro </label>
-                    <input type="text" class="form-control" id="address" required />
+        <div class="container mt-5">
+            <!-- Conteúdo do Calendário -->
+            <div id="calendar"></div>
+        
+            <!-- Formulário de Marcação -->
+            <h2 class="mt-5">Marcar</h2>
+            <form>
+              <div class="row">
+                <div class="col-md-8 mb-3">
+                  <label for="address" class="form-label">Ponto de encontro</label>
+                  <input type="text" class="form-control" id="address" required />
                 </div>
-            </div>
-            
-            <!--CALENDARIO-->
-            <div id="calendario">
-                <div class="col-md-6 mb-3">
-                    <label for="Date" class="form-label">Data</label>
-                    <input type="date" class="form-control" id="Date" />
-                </br>
-                <!--/CALENDARIO-->
-                
-                <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-            </div>
-        </div>
-            <!--/MARCAR-->
+                <div class="col-md-4 mb-3">
+                  <label for="date" class="form-label">Data</label>
+                  <input type="date" class="form-control" id="date" required />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <label for="description" class="form-label">Descrição</label>
+                  <textarea class="form-control" id="description" rows="3" required></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
 
             <div class="central" id="central1">
                 <!--CALENDARIO-->
@@ -181,7 +184,7 @@
                 <button type="submit" class="btn btn-primary">Participar</button>
                 <!--/CALENDARIO-->
             </div>
-            
+    </div>  
 
         
 
