@@ -75,3 +75,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+function destacarDia(dia) {
+  // Adicione o estilo de destaque ao dia clicado
+  const celula = document.querySelector(`td a[href="#"][onclick="destacarDia(${dia})"]`);
+  celula.classList.toggle("text-danger"); // Alterne a cor (por exemplo, vermelho)
+}
