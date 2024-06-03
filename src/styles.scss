@@ -60,7 +60,9 @@ h2 {
 .footer {
   margin-top: 30px;
 }
-
+.nav-link{
+  color: white;
+}
 //INICIO
 .logo {
   font-family: 'Dancing Script', cursive;
@@ -118,6 +120,19 @@ h2 {
   border-radius: 5px;
 }
 
+//lista
+.list-group-item{
+  background-color: #330c05;
+  color: #ffdba8;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #ffdba8; /* cor da borda */
+
+}
+#listcha{
+  margin-top: 50px;
+}
+
 //CONTEUDO
 #accordionFlushExample {
   margin-top: 50px;
@@ -131,6 +146,17 @@ h2 {
   padding: 10px 150px 10px 150px;
 }
 
+.bg-body-tertiary{
+  --bs-bg-opacity: 0;
+}
+.table > :not(caption) > * > *{
+  background-color: #330c05;
+  color: white;
+}
+#centralconteudo{
+margin: 150px;
+}
+
 //LOGIN
 .central {
   background-color: #330c05;
@@ -138,6 +164,7 @@ h2 {
   width: fit-content;
   margin: auto;
   margin-top: 50px;
+  
 }
 
 .login-container {
@@ -256,4 +283,12 @@ margin-top: 10px;
 .card{
   padding: 2px;
   margin: 15px;
+}
+.mb-4{
+background-color: #330c05;
+color: #ffdba8;
+}
+#ajustComentario{
+padding-top: 0px;
+margin-top: 0px;
 }

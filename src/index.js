@@ -150,3 +150,28 @@ const myToastEl = document.getElementById('myToast')
 myToastEl.addEventListener('hidden.bs.toast', () => {
   // do something...
 })
+
+//comentarios
+document.getElementById('commentForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Obter os valores dos campos
+  var name = document.getElementById('name').value;
+  var comment = document.getElementById('comment').value;
+  
+  // Criar um novo elemento de comentário
+  var commentCard = document.createElement('div');
+  commentCard.className = 'card mb-3';
+  commentCard.innerHTML = `
+      <div class="card-body">
+          <h5 class="card-title">${name}</h5>
+          <p class="card-text">${comment}</p>
+      </div>
+  `;
+  
+  // Adicionar o novo comentário à seção de comentários
+  document.getElementById('commentsSection').appendChild(commentCard);
+  
+  // Limpar o formulário
+  document.getElementById('commentForm').reset();
+});

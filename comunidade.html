@@ -1,163 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <script type="module" src="./src/index.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Comunidade - Coffee Clube</title>
 
     <!-- fontes -->
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Style+Script&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@900&family=Great+Vibes&family=Style+Script&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Dancing+Script:wght@700&family=Great+Vibes&family=Style+Script&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chewy&family=Concert+One&family=Dancing+Script:wght@700&family=Great+Vibes&family=Style+Script&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700;900&family=Great+Vibes&family=Style+Script&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Chewy&display=swap" rel="stylesheet" />
     <!-- /fontes -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </head>
-
-  <body class="p-4">
+    <script type="module" src="./src/index.js"></script>
+</head>
+<body class="p-4">
     <h4 class="logo">Coffee Club</h4>
 
     <!--BARRA DE NAVEGAÇÃO-->
     <nav class="nav nav-pills flex-column flex-sm-row">
-      <a class="flex-sm-fill text-sm-center nav-link" href="/index.html">
-        Início
-      </a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="/conteudo.html">
-        Conteúdo
-      </a>
-      <a
-        class="flex-sm-fill bg-black text-sm-center nav-link active"
-        aria-current="page"
-        href="/comunidade"
-        aria-current="page"
-      >
-        Comunidade
-      </a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="/encontros.html">
-        Encontros
-      </a>
-      <a class="flex-sm-fill text-sm-center nav-link" href="/login.html">
-        Login
-      </a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="/index.html">Início</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="/conteudo.html">Conteúdo</a>
+        <a class="flex-sm-fill bg-black text-sm-center nav-link active" aria-current="page" href="/comunidade">Comunidade</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="/encontros.html">Encontros</a>
+        <a class="flex-sm-fill text-sm-center nav-link" href="/login.html">Login</a>
     </nav>
     <!--/BARRA DE NAVEGAÇÃO-->
 
-     <!--APRESENTAÇÃO-->
-     <h1 id="titulo">Comunidade</h1>
-     <h4 class="bemVindos">Coffee Club</h4>
-<!--/APRESENTAÇÃO-->
+    <!--APRESENTAÇÃO-->
+    <h1 id="titulo">Comunidade</h1>
+    <h4 class="bemVindos">Coffee Club</h4>
+    <!--/APRESENTAÇÃO-->
 
-<div class="central" id="central2">
+    <div class="central" id="central2">
+        <!--COMENTARIOS-->
+        <div class="container mt-5" id="ajustComentario">
+            <!-- Formulário para adicionar um novo comentário -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <form id="commentForm">
+                        <div class="form-group">
+                            <label for="comment">Comentário:</label>
+                            <textarea class="form-control" id="comment" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+                    </form>
+                </div>
+            </div>
 
-  
-  <!--CARDS-->
-  <div class="card" style="width: 18rem;">
-    <img src="https://cdn.abrahao.com.br/base/4fb/e07/3f1/cappuccino.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">jeslany_htinha_2001</h5>
-      <p class="card-text">Nota 10 pra arte, nota 2 pro sabor</p>
-      <a href="#" class="btn btn-primary">Responder</a>
+            <!-- Área para exibir os comentários -->
+            <div id="commentsSection">
+                <!-- Comentários serão adicionados aqui -->
+            </div>
+        </div>
+        <!--/COMENTARIOS-->
+
+        <!--CARDS-->
+        <div class="card" style="width: 18rem;">
+            <img src="https://amaisd.com.br/wp-content/uploads/2023/10/image-9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Juninho</h5>
+                <p class="card-text">Abriu uma estação de café no Flamboyan Shopping pessoal</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">agora</small>
+            </div>
+            <a href="#" class="btn btn-primary">Comentar</a>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://cdn.abrahao.com.br/base/4fb/e07/3f1/cappuccino.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">jeslany_htinha_2001</h5>
+                <p class="card-text">Nota 10 pra arte, nota 2 pro sabor</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">há 3 min</small>
+            </div>
+            <a href="#" class="btn btn-primary">Comentar</a>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://blog.archtrends.com/wp-content/uploads/2022/11/cafeteriapequenaabre-2.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Glória</h5>
+                <p class="card-text">Venham conhecer a inauguração da minha cafeteria!</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">há 2 hrs</small>
+            </div>
+            <a href="#" class="btn btn-primary">Comentar</a>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://servircomrequinte.francobachot.com.br/wp-content/uploads/2023/02/post_thumbnail-3b3cea536f62f7c98b69afe171af3619-2048x1365.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Tonio</h5>
+                <p class="card-text">Primeira aula do curso de barista</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">há 1 semana</small>
+            </div>
+            <a href="#" class="btn btn-primary">Comentar</a>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a3/5c/c0/fui-de-salted-caramel.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Fulano de Tal</h5>
+                <p class="card-text">Experiência surreal com esse novo café da the coffe</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">há 3 meses</small>
+            </div>
+            <a href="#" class="btn btn-primary">Comentar</a>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/349ed0e3b47875e425654066d4a8fd40/Derivates/d1029f96e5acc1f6124eed0e86a3e1388342a95b.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ciclano</h5>
+                <p class="card-text">Eu pedi dois cafés e me entregaram gelado! Que absurdo, quem bebe cafe assim?</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">há 1 ano</small>
+            </div>
+            <a href="#" class="btn btn-primary">Comentar</a>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/42/53/1f/coffee-breeze.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nelsa Cafezêra</h5>
+                <p class="card-text">Achei inovador o jeito como eles combinam o gim, com o sabor da baunilha e o café expresso. Os biscoitinhos também, tudo maravilhoso!</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-body-secondary">há 3 dias</small>
+            </div>
+            <a href="#" class="btn btn-primary">Comentar</a>
+        </div>
     </div>
-  </div>
-
-<div class="card" style="width: 18rem;">
-  <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a3/5c/c0/fui-de-salted-caramel.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Fulano de Tal</h5>
-    <p class="card-text">Experiencia surreal com esse novo café da the coffe!</p>
-    <a href="#" class="btn btn-primary">Responder</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/349ed0e3b47875e425654066d4a8fd40/Derivates/d1029f96e5acc1f6124eed0e86a3e1388342a95b.jpg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Nelsa Cafezêra</h5>
-    <p class="card-text">Eu pedi dois cafés e me entregaram gelado! Que absurdo, quem bebe cafe assim?</p>
-    <a href="#" class="btn btn-primary">Responder</a>
-  </div>
-</div>
-
-<div class="card" style="width: 18rem;">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyloty_01KTlvQrfI4fHjDSipbbOUFIIt7u2LU7lQk5A&s" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Ciclano</h5>
-    <p class="card-text">Achei inovador o jeito como eles combinam o gim, com o sabor da baunilha e o café expresso no African Brezze do El Café. O pão de queijo também, maravilhoso!</p>
-    <a href="#" class="btn btn-primary">Responder</a>
-  </div>
-</div>
-
-</div>
-<!--/CARDS-->
+    <!--/CARDS-->
 
     <!--CONTEUDO-->
     <div class="toast-container position-static">
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <img src="https://cdn.abrahao.com.br/base/4fb/e07/3f1/cappuccino.jpg" class="rounded me-2" alt="...">
-          <strong class="me-auto">jeslany_htinha_2001</strong>
-          <small class="text-body-secondary">just now</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="https://cdn.abrahao.com.br/base/4fb/e07/3f1/cappuccino.jpg" class="rounded me-2" alt="...">
+                <strong class="me-auto">jeslany_htinha_2001</strong>
+                <small class="text-body-secondary">just now</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Nota 10 pra arte, nota 2 pro sabor.
+            </div>
         </div>
-        <div class="toast-body">
-          Nota 10 pra arte, nota 2 pro sabor.
+
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a3/5c/c0/fui-de-salted-caramel.jpg" class="rounded me-2" alt="...">
+                <strong class="me-auto">Fulano de Tal</strong>
+                <small class="text-body-secondary">2 seconds ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Experiência surreal com esse novo café da the coffe
+            </div>
         </div>
-      </div>
-    
-      <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="toast-header">
-          <img src="https://media-cdn.tripadvisor.com/media/photo-m/1280/16/a3/5c/c0/fui-de-salted-caramel.jpg" class="rounded me-2" alt="...">
-          <strong class="me-auto">Fulano de Tal</strong>
-          <small class="text-body-secondary">2 seconds ago</small>
-          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-        <div class="toast-body">
-          Experiencia surreal com esse novo café da the coffe
-        </div>
-      </div>
     </div>
     <!--/CONTEUDO-->
-  
 
-     <!-- Rodapé -->
-     <div class="footer">
-    </br> 
-      <p>&copy; 2024 Coffee Club. Todos os direitos reservados.</p>
+    <!-- Rodapé -->
+    <div class="footer mt-5">
+        <p>&copy; 2024 Coffee Club. Todos os direitos reservados.</p>
     </div>
     <!--/Rodapé -->
-  </body>
+</body>
 </html>
